@@ -1,0 +1,75 @@
+.page-404-1 {
+	&__section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 153px 0;
+
+		@include breakpoint(laptop) {
+			margin-top: 61px;
+			margin-bottom: 80px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-top: 88px;
+			margin-bottom: 104px;		
+		}
+	}
+
+	&__text {
+		display: flex;
+		align-items: center;
+	}
+
+	&__number {
+		font-size: 248px;
+		font-weight: 900;
+		line-height: 250px;
+		color: #000000;
+
+		@include breakpoint(mobile) {
+			font-size: 112px;
+			line-height: 120px;
+		}
+	}
+
+	&__img {
+		width: 224px;
+		height: 224px;
+		margin: 0 24px;
+		object-fit: cover;
+
+		@include breakpoint(mobile) {
+			width: 104px;
+			height: 104px;
+			margin: 0 8px;
+		}
+	}
+
+	&__title {
+		margin-top: 61px;
+		color: #000000;
+
+		@include breakpoint(tablet) {
+			margin-top: 56px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-top: 40px;
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+
+	&__link	{
+		margin-top: 104px;
+
+		@include breakpoint(laptop) {
+			margin-top: 56px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-top: 24px;
+		}
+	}
+}

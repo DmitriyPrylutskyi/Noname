@@ -1,0 +1,555 @@
+.single {
+	&__img {
+		width: 100%;
+		height: 798px;
+		background-size: cover;
+		background-position: center;
+
+		@include breakpoint(laptop) {
+			height: 568px;
+		}
+
+		@include breakpoint(tablet) {
+			height: 328px;
+		}
+
+		@include breakpoint(mobile) {
+			height: 220px;
+		}
+	}
+
+	&__title {
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+		color: $bgColor;
+	}
+
+	&__section {
+		&__main-image {
+			position: relative;
+		}
+		&__video {
+			margin-top: 140px;
+			text-align: center;
+
+			@include breakpoint(laptop) {
+				margin-top: 88px;
+			}
+
+			@include breakpoint(mobile) {
+				margin-top: 48px;
+			}
+
+			.container {
+				max-width: 1244px;
+				padding: 0;
+
+				@include breakpoint(laptop) {
+					max-width: 884px;
+				}
+
+				@include breakpoint(tablet) {
+			    	padding: 0 40px;
+			    }
+
+			    @include breakpoint(mobile) {
+			    	padding: 0;
+			    }
+			}
+		}
+	}
+
+	&__desc {
+		margin-top: 24px;
+
+		@include breakpoint(mobile) {
+			padding: 0 20px;
+			margin-top: 16px;
+		}
+	}
+
+	&__video__slider {
+		width: 990px;
+	    margin: 56px auto 0 auto;
+
+	    @include breakpoint(laptop) {
+	    	width: 700px;
+	    	margin: 40px auto 0 auto;
+	    }
+
+	    @include breakpoint(tablet) {
+	    	width: 100%;
+	    	margin-top: 32px;
+	    }
+
+	    @include breakpoint(mobile) {
+	    	margin-top: 16px;
+	    }
+
+		&__img {
+			width: 990px;
+			height: 532px;
+			object-fit: cover;
+
+			@include breakpoint(laptop) {
+				width: 700px;
+				height: 376px;
+			}
+
+			@include breakpoint(tablet) {
+				width: 100%;
+				height: 370px;
+			}
+
+			@include breakpoint(mobile) {
+				height: 172px;
+			}
+		}
+	}
+
+	&__video__slide {
+		position: relative;
+
+		.single__video__media {
+			display: none;
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		}
+
+		&__button-play {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 104px;
+			height: 104px;
+			cursor: pointer;
+
+			@include breakpoint(laptop) {
+				width: 78px;
+				height: 78px;
+			}
+
+			@include breakpoint(mobile) {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		.close-video {
+			display: none;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			cursor: pointer;
+			z-index: 9;
+		}
+	}
+
+	&__video__slider-nav {
+		width: 990px;
+		margin: 24px auto 0 auto;
+
+		@include breakpoint(laptop) {
+			width: 700px;
+		}
+
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+
+		@include breakpoint(mobile) {
+			margin-top: 16px;
+		}
+
+		.slick-list {
+			margin: 0 -16px;
+
+			@include breakpoint(laptop) {
+				margin: 0 -15px;
+			}
+
+			@include breakpoint(mobile) {
+				margin: 0;
+			}
+		}
+
+		&__img {
+			width: 100%;
+			height: 120px;
+			object-fit: cover;
+
+			@include breakpoint(laptop) {
+				height: 82px;
+			}
+
+			@include breakpoint(tablet) {
+				height: 113px;
+			}
+
+			@include breakpoint(mobile) {
+				height: 71px;
+			}
+		}
+	}
+
+	&__video__slide-nav {
+		position: relative;
+		padding: 0 15px;
+
+		@include breakpoint(mobile) {
+			padding: 0 10px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 45px;
+			height: 45px;
+			background-image: url('../img/button_play.png');
+			background-size: cover;
+
+			@include breakpoint(laptop) {
+				width: 30px;
+				height: 30px;
+			}
+
+			@include breakpoint(tablet) {
+				width: 40px;
+				height: 40px;
+			}
+
+			@include breakpoint(mobile) {
+				width: 28px;
+				height: 28px;
+			}
+		}		
+	}
+
+	&__section {
+		&__info {
+			margin-top: 72px;
+
+			@include breakpoint(laptop) {
+				margin-top: 56px;
+			}
+
+			@include breakpoint(tablet) {
+				margin-top: 40px;
+			}
+
+			@include breakpoint(mobile) {
+				.container {
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	&__desc__info1, &__desc__info2 {
+		width: 1244px;
+		margin: 0 auto;
+		text-align: center;
+
+		@include breakpoint(laptop) {
+			width: 700px;
+		}
+
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+
+		@include breakpoint(mobile) {
+			padding: 0 20px;
+		}
+	}
+
+	&__desc__info2 {
+		margin-top: 145px;
+
+		@include breakpoint(laptop) {
+			margin-top: 110px;
+		}
+	}
+
+	&__info1__slider, &__info2__slider {
+		margin-top: 56px;
+
+		@include breakpoint(laptop) {
+			margin-top: 40px;
+		}
+	}
+
+	&__info1__slide, &__info2__slide {
+		position: relative;
+
+		&.dg-center {
+			position: relative;
+			box-shadow: 8px 8px 24px rgba(49, 46, 46, 0.24);
+
+			&:after {
+				opacity: 0;
+			}
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(0deg, rgba(49, 46, 46, 0.32), rgba(49, 46, 46, 0.32));
+			opacity: 1;
+			transition: opacity 0.5s;
+
+			@include breakpoint(mobile) {
+				content: none;
+			}
+		}
+
+		&__img {
+			width: 734px;
+			height: 331px;
+			object-fit: cover;
+
+			@include breakpoint(laptop) {
+				width: 518px;
+				height: 248px;
+			}
+
+			@include breakpoint(tablet) {
+				width: 448px;
+				height: 214px;
+			}
+
+			@include breakpoint(mobile) {
+				width: 100vw;
+				height: 154px;
+			}
+		}
+	}
+
+	&__section {
+		&__our-works {
+			position: relative;
+			margin-top: 84px;
+			padding: 72px 0 56px;
+			text-align: center;
+			background-color: $bgColor;
+
+			@include breakpoint(tablet) {
+				padding: 72px 0 64px;
+			}
+
+			@include breakpoint(tablet) {
+				margin-top: 100px;
+				padding: 88px 0 64px;
+			}
+
+			@include breakpoint(mobile) {
+				margin-top: 60px;
+				padding: 48px 0 16px;
+			}
+
+			.slick-list {
+				height: 375px;
+				margin: 0 -16px;
+
+				@include breakpoint(laptop) {
+					height: 268px;
+					margin: 0 -15px;
+				}
+
+				@include breakpoint(tablet) {
+					height: 233px;
+				}
+
+				@include breakpoint(mobile) {
+					height: 154px;
+					margin: 0 -10px;
+				}
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: -105px;
+				left: 0;
+				width: 100%;
+				border: 0 solid transparent;
+				border-right-width: 100vw;
+	    		border-left-width: 0;
+				border-top: 105px solid $bgColor;
+			}
+
+			.our-works__slider {
+				margin-top: 48px;
+
+				.clients__slide {
+					height: 351px;
+					margin: 0 16px;
+
+					@include breakpoint(laptop) {
+						height: 244px;
+						margin: 0 15px;
+					}
+
+					@include breakpoint(tablet) {
+						height: 209px;
+					}
+
+					@include breakpoint(mobile) {
+						height: 130px;
+						margin: 0 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.contacts__section {
+		padding: 261px 0 104px 0;
+
+		@include breakpoint(laptop) {
+			padding: 176px 0 88px 0;
+		}
+
+		@include breakpoint(tablet) {
+			padding: 104px 0 80px 0;
+		}
+
+		@include breakpoint(mobile) {
+			padding: 88px 0 48px 0;
+		}
+	}
+
+	.top__section__slide-img {
+		width: 100%;
+
+		&:hover {
+			box-shadow: 8px 8px 24px rgba(193, 193, 193, 0.24);
+		}
+	}
+}
+
+.dg-container{
+	width: 100%;
+	position: relative;
+}
+.dg-wrapper{
+	width: 734px;
+	height: 331px;
+	margin: 0 auto;
+	position: relative;
+
+	@include breakpoint(laptop) {
+		width: 518px;
+		height: 248px;
+	}
+
+	@include breakpoint(tablet) {
+		width: 448px;
+		height: 214px;
+	}
+
+	@include breakpoint(mobile) {
+		width: 100vw;
+		height: 154px;
+	}
+}
+.dg-wrapper div{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.dg-wrapper div.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.dg-wrapper div img{
+	display: block;
+}
+
+.dg-container .arrows {
+	position: absolute;
+	bottom: -56px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+    align-items: center;
+}
+
+.dg-container .arrow{
+	width: 40px;
+	height: 40px;
+	z-index: 1000;
+	background-color: $secondaryColor;
+	cursor: pointer;
+
+
+	&.dg-prev {
+		margin-right: 9px;
+		-webkit-mask: url(../img/slider-arrow-left.svg) no-repeat center;
+		mask: url(../img/slider-arrow-left.svg) no-repeat center;
+	}
+
+	&.dg-next {
+		margin-left: 9px;
+		-webkit-mask: url(../img/slider-arrow-right.svg) no-repeat center;
+		mask: url(../img/slider-arrow-right.svg) no-repeat center;
+	}
+
+	&:hover {
+		background-color: $mainColor;
+	}
+}
+
+.dg-container .dots {
+	display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dg-container .dots li {
+	position: relative;
+    display: inline-block;
+    padding: 0;
+	width: 8px;
+	height: 8px;
+	margin: 0 8px;
+	cursor: pointer;
+
+	button {
+		width: 8px;
+		height: 8px;
+		padding: 0;
+		font-size: 0;
+	    line-height: 0;
+	    display: block;
+	    cursor: pointer;
+	    color: transparent;
+	    border: 0;
+	    outline: 0;
+	    background: 0 0;
+		border: 1px solid #C2C2C2;
+		border-radius: 50%;
+	}
+}
+
+.dg-container .dots li.active button {
+	border: 1px solid #3C3C3C;
+}

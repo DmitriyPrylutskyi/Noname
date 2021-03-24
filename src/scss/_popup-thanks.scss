@@ -1,0 +1,25 @@
+.popup-thanks {
+	position: relative;
+	width: 80%;
+	max-width: 516px;
+	padding: 48px 45px 40px 40px;
+	margin: 10% auto;
+	text-align: center;
+	background-color: $bgColor;
+
+
+	h2 {
+		margin-top: 32px;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+
+	p {
+		margin-bottom: 24px;
+		color: $mainColor;
+	}
+
+	.contacts {
+		margin-top: 29px;
+	}
+}

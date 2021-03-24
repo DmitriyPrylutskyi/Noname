@@ -1,0 +1,143 @@
+.contacts {
+	@include breakpoint(tablet) {
+		.main .container {
+			padding: 0;
+		}
+	}
+}
+
+.contact {
+	&__section {
+		display: flex;
+		align-items: center;
+		height: 992px;
+		background-size: cover;
+
+		@include breakpoint(laptop) {
+			height: 792px;
+		}
+
+		@include breakpoint(tablet) {
+			flex-direction: column;
+			height: auto;
+			margin-bottom: 88px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-bottom: 48px;
+		}
+	}
+
+	&__img-block {
+		flex: 1 1 848px;
+		height: 992px;
+		margin-left: calc(50% - 50vw);
+
+		@include breakpoint(laptop) {
+			flex: 1 1 607px;
+			height: 792px;
+		}
+
+		@include breakpoint(tablet) {
+			flex : none;
+			height: 358px;
+		}
+
+		@include breakpoint(mobile) {
+			height: 154px;
+		}
+	}
+
+	&__info-block {
+		flex: 1 1 862px;
+		padding-left: 128px;
+
+		@include breakpoint(laptop) {
+			flex: 1 1 609px;
+			padding-left: 91px;
+		}
+
+		@include breakpoint(tablet) {
+			flex: none;
+			width: 448px;
+			margin-top: 56px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+			text-align: center;
+		}
+
+		@include breakpoint(mobile) {
+			width: 100%;
+			margin-top: 48px;
+			padding: 0 20px;
+		}
+
+		textarea {
+			margin-bottom: 32px;
+		}
+
+		.contact {
+			margin: 0;
+
+			@include breakpoint(tablet) {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-weight: 300;
+
+		@include breakpoint(laptop) {
+			margin-bottom: 24px;
+		}
+
+		@include breakpoint(tablet) {
+			margin-bottom: 16px;
+		}
+	}
+
+	&__title-tel {
+		margin-bottom: 8px;
+	}
+
+	&__tel {
+		display: block;
+		margin-bottom: 72px;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 24px;
+
+		@include breakpoint(laptop) {
+			margin-bottom: 48px;
+		}
+
+		@include breakpoint(tablet) {
+			margin-bottom: 56px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-bottom: 48px;
+		}
+	}
+
+	&__title-form {
+		margin-bottom: 32px;
+
+		@include breakpoint(laptop) {
+			margin-bottom: 24px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-bottom: 32px;
+		}
+	}
+}

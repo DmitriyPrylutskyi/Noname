@@ -1,0 +1,148 @@
+.header {
+    position: relative;
+    padding: 32px 0;
+
+    @media (max-width: 1299px) and (min-width: 1025px) {
+        .container {
+            padding: 0 20px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 88px;
+
+        @include breakpoint(mobile) {
+            height: 72px;
+        }
+    }
+
+    &__menu {
+    	transition: left 1s;
+
+    	&.open {
+    		left: 0;
+    		z-index: 9;
+    	}
+
+    	@include breakpoint(tablet) {
+    		position: absolute;
+		    left: -100%;
+		    top: 120px;
+			width: 100%;
+		    height: calc(100vh - 88px);
+		    text-align: center;
+		    background-color: $bgColor;
+		}
+
+        @include breakpoint(mobile) {
+            top: 104px;
+            height: calc(100vh - 72px);
+        }
+    }
+
+    &__logo-link img {
+    	width: 88px;
+    	height: 88px;
+
+    	@include breakpoint(mobile) {
+    		width: 72px;
+    		height: 72px;
+    	}
+    }
+
+    .nav-list {
+    	display: flex;
+
+    	@include breakpoint(tablet) {
+			display: block;
+            margin-top: 68px;
+		}
+    }
+
+    .nav-item {
+    	padding-left: 56px;
+
+    	@include breakpoint(tablet) {
+    		padding: 20px 0;
+    	}
+
+        &.active {
+            .nav__link {
+                text-decoration: underline;
+                color: $mainColor;
+
+                @include breakpoint(tablet) {
+                    text-decoration: none;
+                }
+            }
+        }
+
+    	.nav__link {
+    		font-weight: 400;
+    		text-transform: uppercase;
+    	}
+
+        &:first-child {
+            padding-left: 0; 
+        }
+	}
+
+	&__button {
+		@include breakpoint(tablet) {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__menu__button {
+		display: none;
+		width: 36px;
+		height: 20px;
+		margin-right: 60px;
+		border: none;
+		background-image: url('../img/menu_icon.png');
+		background-color: transparent;
+		background-repeat: no-repeat;
+    	background-size: contain;
+
+		@include breakpoint(tablet) {
+			display: block;
+		}
+
+		@include breakpoint(mobile) {
+			width: 24px;
+			height: 13px;
+			margin-right: 47px;
+		}
+
+        &.open {
+            height: 36px;
+            background-image: url('../img/close.png');
+        }
+	}
+
+	&-contact__link {
+		@include breakpoint(tablet) {
+    		display: none;
+    	}
+
+		&__mobile {
+			display: none;
+
+			@include breakpoint(tablet) {
+    			display: block;
+    		}
+
+    		img {
+    			width: 36px;
+
+    			@include breakpoint(mobile) {
+    				width: 24px;
+    			}
+    		}
+		}
+	}
+}

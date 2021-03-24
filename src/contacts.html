@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./components/_head.html')
+
+<body class="contacts">
+		@@include('./components/_header.html')
+		<main class="main">
+			<div class="container">
+				<section class="contact__section">
+					<div class="contact__img-block">
+						<img class="contact__img" src="img/contacts.jpg" alt="contacts">
+					</div>
+					<div class="contact__info-block">
+						<h2 class="contact__title">Контакты</h2>
+						<h3 class="contact__title-tel">Тел.</h3>
+						<a href="tel:+38098-686-55-55" class="contact__tel">+38 (098) 686-55-55</a>
+						<h2 class="contact__title-form">Напишите нам</h2>
+						<form action="/">
+							<input type="text" placeholder="Имя">
+							<input type="email" placeholder="E-mail">
+							<input type="tel" placeholder="Телефон">
+							<textarea placeholder="Введите сообщение"></textarea>
+							<button type="sumbit" class="btn contact" id="submit-btn">
+								ОТПРАВИТЬ
+							</button>
+						</form>
+					</div>
+				</section>
+			</div>
+		</main>
+	@@include('./components/_footer.html')
+</body>
+@@include('./components/_scripts.html')
+
+</html>

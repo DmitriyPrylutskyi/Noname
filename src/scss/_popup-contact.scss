@@ -1,0 +1,26 @@
+.popup-contact {
+	position: relative;
+	width: 80%;
+	max-width: 830px;
+	padding: 48px;
+	margin: 10% auto;
+	background: url('../img/bg_popup_contact.jpg');
+	background-size: cover;
+
+	h2 {
+		margin-bottom: 32px;
+		text-align: center;
+	}
+
+	.contacts {
+		margin-top: 29px;
+	}
+
+	@include breakpoint(mobile) {
+		padding: 20px;
+		.close {
+			top: 20px;
+			right: 20px;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.page-404 {
+	&__section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 86px;
+		margin-bottom: 124px;
+
+		@include breakpoint(laptop) {
+			margin-top: 38px;
+			margin-bottom: 80px
+		}
+
+		@include breakpoint(tablet) {
+			margin-top: 58px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-top: 50px;
+			margin-bottom: 88px
+		}
+	}
+
+	&__img {
+		width: auto;
+		height: 360px;
+
+		@include breakpoint(tablet) {
+			height: 340px;
+		}
+
+		@include breakpoint(mobile) {
+			height: 140px;
+		}
+	}
+
+	&__title {
+		margin-top: 34px;
+		color: #000000;
+
+		@include breakpoint(tablet) {
+			margin-top: 42px;
+		}
+
+		@include breakpoint(mobile) {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+
+	&__link	{
+		margin-top: 104px;
+
+		@include breakpoint(laptop) {
+			margin-top: 80px;
+		}
+
+		@include breakpoint(tablet) {
+			margin-top: 48px;
+		}
+
+		@include breakpoint(mobile) {
+			margin-top: 24px;
+		}
+	}
+}
